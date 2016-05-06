@@ -1,0 +1,2 @@
+# ProjectX
+ProjectX is one of my last projects I have done before the end of my academic training in Simplon.co (Boulogne-sur-mer). This is a personal project that is to say that it was made out of my training time as SeaLife project. It is not yet finished but the goal is to continue to practice javascript, jquery, html5, css3 and php. Loving animations and interactions, this project is perfect to continue learning, create designs and test new ways to program.
