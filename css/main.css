@@ -1,0 +1,340 @@
+/***************************************
+****************************************
+ Author     : bbsm
+***************************************
+***************************************/
+
+
+
+
+/* remove margin of the body */
+body{
+    margin: 0;
+}
+
+
+/********************************************
+************** CLASS ***********************
+********************************************/
+
+
+/* define the font for the paragraph of the website */
+.paragraphFont{
+
+}
+
+/* h1 titles */
+.bigTitleFont{
+    font-family: 'roboto', sans-serif, helvetica;
+    font-weight: 100;
+    font-size: 3.5em;
+}
+
+/* small titles (often above the big title) */
+.smallTitleFont{
+    font-family: 'roboto', sans-serif, helvetica;
+    font-weight: 100;
+    font-size: 2.5em; 
+}
+
+/* Full width container with little margins */
+.container{
+    width: 80%;
+    height: auto;
+    margin-left:  10%;
+    margin-right: 10%;
+}
+
+/* 50% width container without margin */
+.containerHalf{
+    width: 50%;
+    height: auto;
+}
+
+/* 50% width container with margin */
+.containerHalfMargin{
+    width: 30%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Very specific class. Width is set to 29% cause of a border. Use this class when there is a 1px solid border (left) */
+.containerMarginBorderLeft{
+    width: 29.8%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-left: 1px solid white;
+}
+
+/* Very specific class. Width is set to 29% cause of a border. Use this class when there is a 1px solid border (right) */
+.containerMarginBorderRight{
+    width: 29.8%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-right: 1px solid white;
+}
+
+/* full width container without margin */
+.containerFull{
+    width: 100%;
+    height: auto;
+}
+
+/* left float class to organize the section or div */
+.floatLeft{
+    float: left;
+}
+
+/* right float class to organize the section or div */
+.floatRight{
+    float: right;
+}
+
+
+/********************************************
+************** PICTURES*********************
+********************************************/
+
+
+/* #astronaut picture of index.php  */
+#astronaut{
+    width: 100%;
+    height: auto;
+}
+
+/* #logo home / rocket into the nav  */
+#logo{
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* hover for #logo home / rocket into the nav with css3 transform and transition */
+#logo:hover{
+    transition: 1s;
+    transform: translate(25px, -17px);
+}
+
+/* #hamburgerIcon and #closeHamburgerIcon for the submenu */
+.menuIcon{
+    width: 35px;
+    height: auto;
+    display: block;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+/* hover and active for #hamburgerIcon and #closeHamburgerIcon of the submenu */
+.menuIcon:hover, menuIcon:active{
+    transition: 1.7s;
+    transform: rotate(720deg);
+}
+
+/*  Put the logo of the website to the right corner of the submenu */
+#logoSubmenu{
+    width: 35px;
+    height: auto;
+    position: absolute;
+    top: 9px;
+    right: 25px;
+}
+
+
+/********************************************
+************** NAV *************************
+*******************************************/
+
+
+/* button #buttonRegister (sign in / sign up) into the nav */
+#buttonRegister{
+    padding: 5px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+/* hover parameters for button #buttonRegister (sign in / sign up) into the nav */
+#buttonRegister:hover{
+    border: 1px solid #81d4fa;
+    color: #81d4fa;
+    -webkit-transition-duration: 0.9s; /* Safari */
+    transition-duration: 0.9s;
+}
+
+/* Position of the menu  */
+nav{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* remove bullets of the menu list  */
+nav ul{
+    list-style-type: none;
+}
+
+/* display list of the menu inline  */
+nav ul li{
+    display : inline;
+    padding-right: 10px;
+}
+
+/* parameters for the links into the menu */
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-right: 15px;
+}
+
+/* menu hover */
+nav ul li a:hover{
+    color: #81d4fa;
+    -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.8s;
+}
+
+/* Hide the main menu between 50 px and 840px */
+@media screen and (min-width: 50px) and (max-width: 840px) {
+    #navBigScreen{
+        display: none;
+    }
+}
+
+/* Hide the hamburger menu between 840 px and 3840px */
+@media screen and (min-width: 840px) and (max-width: 3840px) {
+    #navSmallScreen{
+        display: none;
+    }
+}
+
+/* submenu (mobile and tablet) */
+#submenu{
+    width: 100%;
+    display: none;
+    text-align: center;
+    font-size: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* submenu list (mobile and tablet) */
+#submenu li{
+    list-style-type:  none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* submenu link (href)(mobile and tablet) */
+#submenu li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* submenu hover */
+#submenu li a:hover{
+    color: #81d4fa;
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+/* submenu border */
+#submenu li{
+    border-top: 0.1px solid #212121;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* submenu list background hover with transition */
+#submenu li:hover{
+    background-color: #111111;
+}
+
+/* Define black background for the submenu (tablet and mobile) when the user clicks on the #hamburgerIcon */
+.blackBackgroundForSmallScreen{
+    background-color: rgba(0,0,0,1) ;
+}
+
+
+/********************************************
+************** INDEX.PHP*******************
+*******************************************/
+
+
+/* First section #homeDescription of the index.php. Describe the goal of the website */
+#homeDescription{
+    text-align: center;
+    background-color: #181c1f;
+    margin-top: -4px;
+    color: white;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+/* parameters for the main title of the Home Page (Welcome to our website) */
+#homeMainTitle{
+    width: 80%;  
+    margin-left: 10%; 
+    margin-right: 10%;
+}
+
+/* hide the description and news paragraphs (when users scroll, these two paragraph appear) */
+.fadeInHome{
+    display: none;
+}
+
+/* parameters for the #homeNews div (latest news) */
+#homeNews div{
+    background-color: black;
+    color: white;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+/* parameters for the #homeNews title (latest news) */
+#homeNews div h2{
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+/* under 840px, the entire #homeDescription becomes as the class .container (text is centered, the width is 80% and there are two 10% margins (left and right) */
+@media screen and (max-width: 640px){
+     .containerMarginBorderLeft, .containerHalfMargin{
+        width: 80%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border: 0px;
+    }
+}
+
+/* Put a border around the main title of the index.php (home page) under 840px*/
+@media screen and (max-width: 640px){
+     #homeDescription h1{
+        border: 0.5px solid white;
+        padding: 50px;
+    }
+}
+
+/* Put a padding aound the main title of the index.php (home page) over 640px*/
+@media screen and (min-width: 640px){
+     #homeDescription h1{
+        padding: 80px;
+    }
+}
+
+
+/********************************************
+************** FOOTER**********************
+*******************************************/
+
